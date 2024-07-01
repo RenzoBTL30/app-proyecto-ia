@@ -12,6 +12,8 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'app-proyecto-ia';
 
+  nroPreguntas:number = 17;
+
   @ViewChild('fileInput') fileInput!: ElementRef<HTMLInputElement>;
   fileName: string = '';
 
