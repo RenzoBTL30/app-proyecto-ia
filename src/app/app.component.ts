@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-root',
@@ -12,7 +13,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'app-proyecto-ia';
 
-  nroPreguntas:number = 17;
+  nroPreguntas:number = 0;
 
   @ViewChild('fileInput') fileInput!: ElementRef<HTMLInputElement>;
   fileName: string = '';
@@ -93,5 +94,18 @@ export class AppComponent {
       console.log('No se ha seleccionado ningún archivo.');
     }
   }
+
+
+  async indicarCantPreguntas() {
+    const { value: cantidad } = await Swal.fire({
+      title: "Ingresa la cantidad de preguntas",
+      input: "number"
+    });
+    if (cantidad) {
+      this.nroPreguntas = cantidad;
+    }
+  }
+
+  
 
 }
