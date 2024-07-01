@@ -1,0 +1,233 @@
+main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 15px;
+}
+
+.title-page {
+    background-color: #00aaff;
+    width: 100%;
+    color: white;
+    padding: 2px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.title-page h2 {
+    margin-left: 15px;
+}
+
+.card {
+    width: 75%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    margin: auto;
+}
+.card h2 {
+    font-size: 20px;
+    margin: 16px 0;
+}
+.card p {
+    color: #888;
+    margin: 8px 0;
+}
+.card .meta {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 16px 0;
+}
+.card .meta div {
+    border: 1px dashed #00aaff;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 14px;
+    color: #00aaff;
+}
+.card .session {
+    border: 1px dashed #00aaff;
+    border-radius: 4px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+}
+.card .session img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.card .footer {
+    font-size: 12px;
+    color: #888;
+}
+.upload-area {
+    width: 100%;
+    height: 100px;
+    border: 2px dashed #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.upload-area input {
+    display: none;
+}
+.upload-area span {
+    font-size: 14px;
+    color: #00aaff;
+}
+
+
+.quiz-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 16px;
+}
+.info-banner {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #333;
+}
+.question-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    margin-bottom: 16px;
+}
+.question-header {
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+.question-type {
+    font-weight: bold;
+    color: #ff4081;
+}
+.question-body {
+    padding: 16px;
+}
+.question-text {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+}
+.option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.option input {
+    margin-right: 8px;
+}
+.option span {
+    font-size: 14px;
+}
+.correct {
+    color: green;
+}
+.incorrect {
+    color: red;
+}
+.question-footer {
+    background-color: #f5f5f5;
+    padding: 8px;
+    border-top: 1px solid #ddd;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-align: right;
+}
+
+.session-data {
+    text-align: left;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #30a011;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #30a011;
+}
+
+.menu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 400px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul ul {
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 2px solid #e0e0e0;
+  }
+  
+  .menu .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .menu .menu-item:hover {
+    background: #e0e0e0;
+  }
+  
+  .menu .arrow {
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu .menu-item.selected {
+    background: #d0d0d0;
+    border-left: 3px solid #c00;
+    color: #c00;
+  }
+  
+  .menu .menu-item.selected .arrow {
+    transform: rotate(90deg);
+  }
+  
+.block-1 {
+    width: 50%;
+}
+
+.block-4 {
+    width: 50%;
+}
