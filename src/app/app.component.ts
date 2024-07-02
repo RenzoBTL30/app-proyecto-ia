@@ -15,8 +15,8 @@ export class AppComponent {
   title = 'app-proyecto-ia';
 
   nroPreguntas:number = 0;
-  PDF:string = "";
-  habilidad:string = 'Comprende el modelo de redes bayesianas';
+  PDF:string='';
+  habilidad:string = '';
 
   preguntas:any[]=[];
 
@@ -256,6 +256,10 @@ export class AppComponent {
     */
 
   @ViewChild('fileInput') fileInput!: ElementRef<HTMLInputElement>;
+  @ViewChild('item') item!: ElementRef;
+
+  selectedItem: string | null = null; // Variable para almacenar el elemento seleccionado
+
   fileName: string = '';
 
   selectedFile: File | null = null;
@@ -351,6 +355,11 @@ export class AppComponent {
     if (cantidad) {
       this.nroPreguntas = cantidad;
     }
+  }
+
+  seleccionarHabilidad(habilidad: string) {
+    this.selectedItem = habilidad; // Actualiza el elemento seleccionado
+    console.log(habilidad);
   }
 
   generarPreguntas() {

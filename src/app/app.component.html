@@ -35,27 +35,27 @@
             <div class="menu">
               <ul>
                 <li>
-                  <div class="menu-item">
+                  <div class="menu-item" (click)="seleccionarHabilidad('Diseña y gestiona aplicaciones de sistemas inteligentes')">
                     <span class="arrow">&#9654;</span> Diseña y gestiona aplicaciones de sistemas inteligentes
                   </div>
                   <ul>
                     <li>
-                      <div class="menu-item">
+                      <div class="menu-item" (click)="seleccionarHabilidad('Analiza y define requerimientos para sistemas inteligentes')">
                         <span class="arrow">&#9654;</span> Analiza y define requerimientos para sistemas inteligentes
                       </div>
                     </li>
                     <li>
-                      <div class="menu-item">
-                        <span class="arrow" style="margin-left: 20px;">&#9654;</span> {{habilidad}}
+                      <div class="menu-item" (click)="seleccionarHabilidad('Comprende el modelo de redes bayesianas')" [ngClass]="{'selected': selectedItem === 'Comprende el modelo de redes bayesianas'}">
+                        <span class="arrow" style="margin-left: 20px;">&#9654;</span> Comprende el modelo de redes bayesianas
                       </div>
                       <ul>
                         <li>
-                          <div class="menu-item">
+                          <div class="menu-item" (click)="seleccionarHabilidad('IA-3: Modelos predictivos')">
                             <span class="arrow">&#9658;</span> IA-3: Modelos predictivos
                           </div>
                           <ul>
                             <li>
-                              <div class="menu-item selected">
+                              <div class="menu-item" (click)="seleccionarHabilidad('Modelos de Redes Bayesianas')">
                                 <span class="arrow">&#9658;</span> Modelos de Redes Bayesianas
                               </div>
                             </li>
@@ -64,22 +64,22 @@
                       </ul>
                     </li>
                     <li>
-                      <div class="menu-item">
-                        <span class="arrow">&#9654;</span> Construye una infraestructura de extracción y procesamiento de datos
+                      <div class="menu-item" (click)="seleccionarHabilidad('Construye una infraestructura de extracción y procesamiento de datos')"  [ngClass]="{'selected': selectedItem === 'Construye una infraestructura de extracción y procesamiento de datos'}">
+                        <span class="arrow" style="margin-left: 20px;" >&#9654;</span> Construye una infraestructura de extracción y procesamiento de datos
                       </div>
                       <ul>
                         <li>
-                          <div class="menu-item">
+                          <div class="menu-item" (click)="seleccionarHabilidad('Construye el dataset para redes bayesianas')">
                             <span class="arrow">&#9658;</span> Construye el dataset para redes bayesianas
                           </div>
                           <ul>
                             <li>
-                              <div class="menu-item">
+                              <div class="menu-item" (click)="seleccionarHabilidad('IA-3: Modelos predictivos')">
                                 <span class="arrow">&#9658;</span> IA-3: Modelos predictivos
                               </div>
                               <ul>
                                 <li>
-                                  <div class="menu-item">
+                                  <div class="menu-item" (click)="seleccionarHabilidad('Modelos de Redes Bayesianas')">
                                     <span class="arrow">&#9658;</span> Modelos de Redes Bayesianas
                                   </div>
                                 </li>
@@ -90,22 +90,22 @@
                       </ul>
                     </li>
                     <li>
-                      <div class="menu-item">
-                        <span class="arrow">&#9654;</span> Explora y transforma los datos para generar modelos predictivos
+                      <div class="menu-item" (click)="seleccionarHabilidad('Explora y transforma los datos para generar modelos predictivos')" [ngClass]="{'selected': selectedItem === 'Explora y transforma los datos para generar modelos predictivos'}">
+                        <span class="arrow" style="margin-left: 20px;">&#9654;</span> Explora y transforma los datos para generar modelos predictivos
                       </div>
                       <ul>
                         <li>
-                          <div class="menu-item">
+                          <div class="menu-item" (click)="seleccionarHabilidad('Desarrolla casos de redes bayesianas')">
                             <span class="arrow">&#9658;</span> Desarrolla casos de redes bayesianas
                           </div>
                           <ul>
                             <li>
-                              <div class="menu-item">
+                              <div class="menu-item" (click)="seleccionarHabilidad('IA-3: Modelos predictivos')">
                                 <span class="arrow">&#9658;</span> IA-3: Modelos predictivos
                               </div>
                               <ul>
                                 <li>
-                                  <div class="menu-item">
+                                  <div class="menu-item" (click)="seleccionarHabilidad('Modelos de Redes Bayesianas')">
                                     <span class="arrow">&#9658;</span> Modelos de Redes Bayesianas
                                   </div>
                                 </li>
