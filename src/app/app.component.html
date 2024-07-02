@@ -46,7 +46,7 @@
                     </li>
                     <li>
                       <div class="menu-item">
-                        <span class="arrow" style="margin-left: 20px;">&#9654;</span> Comprende el modelo de redes bayesianas
+                        <span class="arrow" style="margin-left: 20px;">&#9654;</span> {{habilidad}}
                       </div>
                       <ul>
                         <li>
@@ -133,23 +133,23 @@
       <div class="info-banner">
           Si desea realizar cambios en las preguntas debe despublicar el Cuestionario y/o eliminar la Evaluación
       </div>
-      <div *ngFor="let question of questions" class="question-card">
+      <div *ngFor="let pregunta of preguntas" class="question-card">
           <div class="question-header">
               <span class="question-type">Pregunta Opción Múltiple</span>
           </div>
           <div class="question-body">
-              <p class="question-text">{{ question.text }}</p>
+              <p class="question-text">{{ pregunta.pregunta }}</p>
               <div class="options">
-                  <div *ngFor="let option of question.options" class="option">
-                      <input type="radio" [name]="'option' + question.id" [value]="option.correct" (change)="onOptionSelected(question, option)">
-                      <span [ngClass]="{'correct': option.correct, 'incorrect': !option.correct}">
-                          {{ option.text }}
+                  <div *ngFor="let option of pregunta.opciones" class="option">
+                      <input type="radio">
+                      <span class="{{option.num_opcion == convertirStringToNumber(pregunta.respuesta) ? 'correct' : 'incorrect'}}">
+                          {{ option.opcion }}
                       </span>
                   </div>
               </div>
           </div>
           <div class="question-footer">
-              <span>{{ question.points }} punto(s)</span>
+              <span>1 punto(s)</span>
           </div>
       </div>
     </div>
