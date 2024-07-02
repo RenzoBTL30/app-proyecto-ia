@@ -9,7 +9,7 @@ export class ServiceIAService {
 
   constructor(private http: HttpClient) { }
 
-  apiUrl:any = 'http://127.0.0.1:8000/preguntas';
+  apiUrl:any = 'http://127.0.0.1:8000/generar_preguntas';
 
   private httpHeaders = new HttpHeaders(
     {'Content-Type': 'application/json'}

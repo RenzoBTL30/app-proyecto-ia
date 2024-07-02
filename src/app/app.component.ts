@@ -15,7 +15,7 @@ export class AppComponent {
   title = 'app-proyecto-ia';
 
   nroPreguntas:number = 0;
-  PDF:any;
+  PDF:string = "";
   habilidad:string = 'Comprende el modelo de redes bayesianas';
 
   preguntas:any[]=[];
