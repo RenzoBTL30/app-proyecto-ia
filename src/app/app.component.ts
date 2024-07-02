@@ -353,8 +353,8 @@ export class AppComponent {
     }
   }
 
-  generarPreguntas(PDF:any, nroPreguntas:number, habilidad:string) {
-    this.serviceIAService.postData(PDF, nroPreguntas, habilidad).subscribe({
+  generarPreguntas() {
+    this.serviceIAService.postData(this.PDF, this.nroPreguntas, this.habilidad).subscribe({
       next: (data) => {
         this.preguntas = data;
         console.log(this.preguntas);
