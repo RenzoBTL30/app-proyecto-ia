@@ -6,11 +6,12 @@
   <div class="block-1">
     <div class="card">
       <div class="upload-area" 
-           (click)="onUploadClick()" 
-           (dragover)="onDragOver($event)" 
-           (dragleave)="onDragLeave()" 
-           (drop)="onDrop($event)">
+          (click)="onUploadClick()" 
+          (dragover)="onDragOver($event)" 
+          (dragleave)="onDragLeave()" 
+          (drop)="onDrop($event)">
           <input type="file" (change)="onFileChange($event)" #fileInput>
+          <img src="/assets/img/subir-archivo.png" alt="Subir Archivo" class="upload-icon">
           <span *ngIf="fileName">{{ fileName }}</span>
           <span *ngIf="!fileName">Arrastra o sube archivos</span>
       </div>
@@ -18,11 +19,12 @@
       <h2>Examen de Redes Bayesianas</h2>
       <p>Sin descripción</p>
       <div class="meta">
-          <div>Tipo: Resultado</div>
-          <div>Preguntas: {{nroPreguntas}}</div>
-          <button (click)="indicarCantPreguntas()">Indicar nro de preguntas</button>
-          <button>Generar preguntas</button>
+        <div>Tipo: Resultado</div>
+        <div>Preguntas: {{nroPreguntas}}</div>
+        <button (click)="indicarCantPreguntas()">Indicar nro de preguntas</button>
+        <button>Generar preguntas</button>
       </div>
+      
       <div class="session">
           <div class="session-data">
             <div style="display: flex;">
